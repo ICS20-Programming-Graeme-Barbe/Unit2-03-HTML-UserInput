@@ -1,11 +1,7 @@
-function enterClicked () {
-  // this function gets user's first name and age and displays it back to user
+// Function in index.html
 
-  // get first name from text field
-  let firstName = document.getElementById("first-name").value
-	// get age from text field and cast it to integer
-  let userAge = parseInt(document.getElementById("age-entered").value)
-
-  // display name and age back to user
-  document.getElementById('user-info').innerHTML = "Your first name is " + firstName + " and you are " + userAge + " years old."
+function buttonClicked () {
+  let stname = document.getElementById("street-name").value
+  let stnumber = document.getElementById("street-number").value
+  document.getElementById('user-info').innerHTML = "You live at " + stnumber + " " + stname 
 }
